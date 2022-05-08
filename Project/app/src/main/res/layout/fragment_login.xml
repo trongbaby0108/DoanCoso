@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    tools:context=".Fragment.FragmentLogin"
+    android:background="@drawable/gym">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:background="@drawable/form_style"
+                android:layout_width="match_parent"
+                android:layout_height="150px">
+
+                <ImageView
+                    android:layout_width="150px"
+                    android:layout_height="match_parent"
+                    android:padding="10px"
+                    android:src="@drawable/user" />
+
+                <EditText
+                    android:id="@+id/dn_UserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:hint="USERNAME"
+                    android:textColor="@color/black"
+                    android:textSize="23dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120px"
+                android:layout_marginTop="80px"
+                android:background="@drawable/form_style">
+
+                <ImageView
+                    android:layout_width="150px"
+                    android:layout_height="match_parent"
+                    android:padding="10px"
+                    android:src="@drawable/password" />
+
+                <EditText
+                    android:id="@+id/dn_Password"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:hint="PASSWORD"
+                    android:password="true"
+                    android:textColor="@color/black"
+                    android:textSize="23dp" />
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="150px"
+                android:id="@+id/btn_dn"
+                android:layout_marginTop="50px"
+                android:background="#74b9ff"
+                android:textColor="#2c3e50"
+                android:text="Đăng nhập"
+                android:textSize="25dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50px"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Quên mật khẩu ?"
+                    android:textSize="25dp"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageButton
+                    android:id="@+id/btn_google"
+                    android:layout_width="match_parent"
+                    android:layout_height="150px"
+                    android:layout_marginTop="50px"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/gg"
+                    android:background="@color/white" />
+                <ImageButton
+                    android:id="@+id/btn_facebook"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="150px"
+                    android:layout_marginTop="50px"
+                    android:layout_weight="1"
+                    android:src="@drawable/fb"
+                    android:background="@color/white"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back" />
+</LinearLayout>

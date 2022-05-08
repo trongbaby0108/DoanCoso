@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/HoangKhangNguyen/DA-CoSo/Project/app/src/main/res/layout/activity_activities_screen.xml" value="0.1824561403508772" />
+        <entry key="..\:/HoangKhangNguyen/DA-CoSo/Project/app/src/main/res/layout/activity_gym_profile.xml" value="0.1778537836682343" />
+        <entry key="..\:/HoangKhangNguyen/DA-CoSo/Project/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/HoangKhangNguyen/DA-CoSo/Project/app/src/main/res/layout/activity_profile_trainer.xml" value="0.1368421052631579" />
+        <entry key="..\:/HoangKhangNguyen/DA-CoSo/Project/app/src/main/res/layout/activity_profile_user.xml" value="0.1824561403508772" />
+        <entry key="..\:/HoangKhangNguyen/DA-CoSo/Project/app/src/main/res/layout/activity_second.xml" value="0.1824561403508772" />
+        <entry key="..\:/HoangKhangNguyen/DA-CoSo/Project/app/src/main/res/layout/header.xml" value="0.1778537836682343" />
+        <entry key="..\:/HoangKhangNguyen/DA-CoSo/Project/app/src/main/res/menu/main_menu.xml" value="0.1" />
+        <entry key="..\:/doancs/Project/app/src/main/res/drawable-v24/back_btn_login.xml" value="0.2305" />
+        <entry key="..\:/doancs/Project/app/src/main/res/drawable-v24/shape_back.xml" value="0.2305" />
+        <entry key="..\:/doancs/Project/app/src/main/res/drawable/form_style.xml" value="0.2305" />
+        <entry key="..\:/doancs/Project/app/src/main/res/font/abhaya_libre.xml" value="0.3182777543267201" />
+        <entry key="..\:/doancs/Project/app/src/main/res/font/baloo.xml" value="0.3182777543267201" />
+        <entry key="..\:/doancs/Project/app/src/main/res/layout/activity_activities_screen.xml" value="0.2975630611372381" />
+        <entry key="..\:/doancs/Project/app/src/main/res/layout/activity_gym_profile.xml" value="0.2975630611372381" />
+        <entry key="..\:/doancs/Project/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/doancs/Project/app/src/main/res/layout/activity_profile_trainer.xml" value="0.2975630611372381" />
+        <entry key="..\:/doancs/Project/app/src/main/res/layout/activity_profile_user.xml" value="0.5" />
+        <entry key="..\:/doancs/Project/app/src/main/res/layout/activity_second.xml" value="0.2975630611372381" />
+        <entry key="..\:/doancs/Project/app/src/main/res/layout/activity_welcome.xml" value="0.2975630611372381" />
+        <entry key="..\:/doancs/Project/app/src/main/res/layout/fragment_confirm.xml" value="0.2975630611372381" />
+        <entry key="..\:/doancs/Project/app/src/main/res/layout/fragment_gym.xml" value="0.25" />
+        <entry key="..\:/doancs/Project/app/src/main/res/layout/fragment_gym_signin.xml" value="0.33" />
+        <entry key="..\:/doancs/Project/app/src/main/res/layout/fragment_home.xml" value="0.2975630611372381" />
+        <entry key="..\:/doancs/Project/app/src/main/res/layout/fragment_login.xml" value="0.2975630611372381" />
+        <entry key="..\:/doancs/Project/app/src/main/res/layout/fragment_signin.xml" value="0.33" />
+        <entry key="..\:/doancs/Project/app/src/main/res/layout/fragment_trainer.xml" value="0.15220179563916203" />
+        <entry key="..\:/doancs/Project/app/src/main/res/layout/fragment_user.xml" value="0.2975630611372381" />
+        <entry key="..\:/doancs/Project/app/src/main/res/layout/header.xml" value="0.5" />
+        <entry key="..\:/doancs/Project/app/src/main/res/menu/main_menu.xml" value="0.2975630611372381" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
