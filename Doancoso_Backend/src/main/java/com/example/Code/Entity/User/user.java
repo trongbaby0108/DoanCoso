@@ -1,12 +1,12 @@
 package com.example.Code.Entity.User;
 
+import com.example.Code.Entity.Auth.Account;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 import javax.persistence.*;
-import java.util.Set;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -18,12 +18,10 @@ public class user {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name= "ID_user")
     private int id ;
-    private String username ;
-    private String password;
     private String name ;
-    private String phone ;
-
-//    @OneToMany(mappedBy = "user",cascade = CascadeType.ALL)
-//    private Set<picUser> picUsers;
-
+    private String address;
+    private String avatar;
+    @OneToOne
+    @JoinColumn(name = "accountID", referencedColumnName = "ID_Account")
+    private Account account;
 }

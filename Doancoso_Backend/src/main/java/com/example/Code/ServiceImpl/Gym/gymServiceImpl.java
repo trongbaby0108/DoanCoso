@@ -28,4 +28,9 @@ public class gymServiceImpl implements gymService {
     public gym findGymById(int id) {
         return gymRepo.findById(id).get();
     }
+
+    @Override
+    public gym findGymByName(String name) {
+        return gymRepo.findByName(name);
+    }
 }

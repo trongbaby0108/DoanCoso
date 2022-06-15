@@ -1,11 +1,12 @@
 package com.example.Code.Entity.Payment;
-import com.example.Code.Entity.PT.personal_trainer_fee;
+import com.example.Code.Entity.PT.personal_trainer;
+import com.example.Code.Entity.User.user;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-import java.util.Date;
+import java.time.LocalDateTime;
 
 @Data
 @NoArgsConstructor
@@ -17,6 +18,13 @@ public class bill_pt {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name= "ID_bill_pt")
     private int id ;
-    private Date day ;
-    private int money ;
+    private LocalDateTime dayStart ;
+    private LocalDateTime dayEnd ;
+    @ManyToOne
+    @JoinColumn(name = "PT_id",nullable = false, referencedColumnName = "ID_pt")
+    private personal_trainer personal_trainer;
+
+    @ManyToOne
+    @JoinColumn(name = "User_id",nullable = false, referencedColumnName = "ID_user")
+    private user user;
 }

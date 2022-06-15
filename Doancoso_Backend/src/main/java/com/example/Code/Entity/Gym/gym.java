@@ -1,12 +1,14 @@
 package com.example.Code.Entity.Gym;
 
-import com.example.Code.Entity.User.picUser;
+import com.example.Code.Service.Gym.judge_gymService;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.persistence.*;
-import java.util.Set;
+import java.util.concurrent.atomic.AtomicInteger;
+import java.util.concurrent.atomic.AtomicReference;
 
 @Data
 @NoArgsConstructor
@@ -18,23 +20,11 @@ public class gym {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name= "ID_gym")
     private int id ;
-    private String username ;
-    private String password ;
     private String name ;
     private String address ;
     private String phone ;
     private String email ;
     private String avatar;
-//    @OneToMany(mappedBy = "gym",cascade = CascadeType.ALL)
-//    private Set<picGym> picGyms;
-//
-//    @OneToMany(mappedBy = "gym",cascade = CascadeType.ALL)
-//    private Set<discount> discounts;
-//
-//    @OneToMany(mappedBy = "gym",cascade = CascadeType.ALL)
-//    private Set<combo> combos;
-//
-//    @OneToMany(mappedBy = "gym",cascade = CascadeType.ALL)
-//    private Set<judge_gym> judge_gyms;
-
+    private boolean enable = true;
+    
 }

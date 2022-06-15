@@ -1,15 +1,15 @@
 package com.example.Code.ServiceImpl.Gym;
 
 
-import com.example.Code.Entity.Gym.discount;
-import com.example.Code.Entity.Gym.judge_gym;
-import com.example.Code.Repository.Gym.judge_gymRepository;
-import com.example.Code.Service.Gym.judge_gymService;
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.List;
+import com.example.Code.Entity.Gym.judge_gym;
+import com.example.Code.Repository.Gym.judge_gymRepository;
+import com.example.Code.Service.Gym.judge_gymService;
 
 @Service
 public class judge_gymServiceImpl implements judge_gymService {

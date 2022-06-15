@@ -1,13 +1,11 @@
 package com.example.Code.Entity.Gym;
 
-import com.example.Code.Entity.User.picUser;
-import com.example.Code.Entity.User.user;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-import java.util.Set;
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -23,6 +21,4 @@ public class picGym {
     @ManyToOne
     @JoinColumn(name = "gym_id",nullable = false, referencedColumnName = "ID_gym")
     private gym gym;
-
-
 }

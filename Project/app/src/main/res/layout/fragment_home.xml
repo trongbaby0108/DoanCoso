@@ -5,15 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/drawer_layout"
-    tools:context=".MainActivity"
+    tools:context=".Activity.MainActivity"
     android:fitsSystemWindows="true"
     tools:openDrawer="start">
 
-
-
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_home2">
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -27,7 +26,8 @@
                 android:layout_marginTop="24dp"
                 android:layout_marginBottom="52dp"
                 android:fontFamily="@font/baloo"
-                android:text="Gym Fitness"
+                android:text="Vegan fitness"
+                android:textAllCaps="true"
                 android:textSize="28sp"
                 app:layout_constraintBottom_toTopOf="@+id/linearLayout"
                 app:layout_constraintEnd_toStartOf="@+id/imageView"
@@ -37,11 +37,12 @@
                 android:id="@+id/textView3"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="177dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="169dp"
                 android:layout_marginBottom="5dp"
+                android:fontFamily="@font/antic"
                 android:text="No pain, No gain"
-                android:textSize="14sp"
+                android:textSize="18sp"
                 app:layout_constraintBottom_toTopOf="@+id/linearLayout"
                 app:layout_constraintEnd_toStartOf="@+id/imageView"
                 app:layout_constraintStart_toStartOf="parent"
@@ -57,7 +58,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/textView2"
-                app:srcCompat="@drawable/icons8_gym_60" />
+                app:srcCompat="@drawable/icon_vegangym" />
 
             <LinearLayout
                 android:id="@+id/linearLayout"
@@ -74,7 +75,8 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    app:cardCornerRadius="15dp">
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -104,7 +106,8 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    app:cardCornerRadius="15dp">
 
                     <RelativeLayout
                         android:id="@+id/gymRoom"
@@ -146,7 +149,8 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    app:cardCornerRadius="15dp">
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -176,7 +180,8 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    app:cardCornerRadius="15dp">
 
                     <RelativeLayout
                         android:layout_width="match_parent"

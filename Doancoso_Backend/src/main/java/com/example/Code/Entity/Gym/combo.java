@@ -19,6 +19,7 @@ public class combo {
     private int id ;
     private String name ;
     private int price ;
+    private boolean enable = true;
     @ManyToOne
     @JoinColumn(name = "gym_id",nullable = false, referencedColumnName = "ID_gym")
     private gym gym;

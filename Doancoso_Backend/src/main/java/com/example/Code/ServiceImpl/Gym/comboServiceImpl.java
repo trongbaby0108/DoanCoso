@@ -1,15 +1,16 @@
 package com.example.Code.ServiceImpl.Gym;
 
-import com.example.Code.Entity.Gym.combo;
-import com.example.Code.Entity.Gym.discount;
-import com.example.Code.Repository.Gym.comboRepository;
-import com.example.Code.Service.Gym.comboService;
-import org.springframework.beans.factory.annotation.Autowired;
-
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+import com.example.Code.Entity.Gym.combo;
+import com.example.Code.Repository.Gym.comboRepository;
+import com.example.Code.Service.Gym.comboService;
+
+@Service
 public class comboServiceImpl implements comboService {
 
     @Autowired
@@ -39,5 +40,10 @@ public class comboServiceImpl implements comboService {
     @Override
     public void delete(int id) {
         comboRepository.deleteById(id);
+    }
+
+    @Override
+    public combo findByid(int id) {
+        return comboRepository.findById(id).get();
     }
 }

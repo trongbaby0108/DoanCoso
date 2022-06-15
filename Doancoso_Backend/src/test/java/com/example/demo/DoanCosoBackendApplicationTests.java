@@ -8,6 +8,7 @@ class DoanCosoBackendApplicationTests {
 
 	@Test
 	void contextLoads() {
+
 	}
 
 }

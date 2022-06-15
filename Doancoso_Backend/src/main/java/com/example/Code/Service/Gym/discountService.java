@@ -1,10 +1,9 @@
 package com.example.Code.Service.Gym;
 
 
-import com.example.Code.Entity.Gym.discount;
-import org.springframework.data.jpa.repository.JpaRepository;
-
 import java.util.List;
+
+import com.example.Code.Entity.Gym.discount;
 
 public interface discountService {
     public List<discount> getAll();

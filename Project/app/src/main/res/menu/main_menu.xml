@@ -5,7 +5,17 @@
         <item
             android:id="@+id/nav_home"
             android:icon="@drawable/icons8_gym_60"
-            android:title="Home" />
+            android:title="Trang chủ" />
+
+        <item
+            android:id="@+id/nav_Chat"
+            android:icon="@drawable/icon_trainer"
+            android:title="Chat"/>
+
+        <item
+            android:id="@+id/Combo"
+            android:icon="@drawable/icon_cate"
+            android:title="Gói tập" />
 
         <item
             android:id="@+id/nav_gym"
@@ -15,47 +25,33 @@
         <item
             android:id="@+id/nav_trainers"
             android:icon="@drawable/icon_trainer"
-            android:title="Trainers" />
+            android:title="Huấn luyện viên" />
+
+        <item android:title="Thông tin">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/nav_profile"
+                        android:icon="@drawable/icon_profile"
+                        android:title="Thông tin"
+                     />
+                    <item
+                        android:id="@+id/nav_logout"
+                        android:icon="@drawable/logout_icon"
+                        android:title="Đăng xuất"
+                        />
+                </group>
+            </menu>
+        </item>
 
         <item
-            android:id="@+id/nav_activities"
-            android:icon="@drawable/icon_activities"
-            android:title="Activities" />
+            android:id="@+id/nav_exit"
+            android:icon="@drawable/icon_trainer"
+            android:title="Thoát" />
     </group>
 
 
-    <item android:title="Profile">
-
-            <menu>
-                <group android:checkableBehavior="single">
-                <item
-                    android:id="@+id/nav_login"
-                    android:icon="@drawable/icon_login"
-                    android:title="Login" />
-                <item
-                    android:id="@+id/nav_profile"
-                    android:icon="@drawable/icon_profile"
-                    android:title="Profile" />
-                <item
-                    android:id="@+id/nav_logout"
-                    android:icon="@drawable/logout_icon"
-                    android:title="Logout" />
-                </group>
-            </menu>
-
-        </item>
 
 
-    <item android:title="More...">
-        <menu>
-            <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/icon_share"
-                android:title="Share" />
-            <item
-                android:id="@+id/nav_rate"
-                android:icon="@drawable/icon_rate"
-                android:title="Rate us" />
-        </menu>
-    </item>
+
 </menu>

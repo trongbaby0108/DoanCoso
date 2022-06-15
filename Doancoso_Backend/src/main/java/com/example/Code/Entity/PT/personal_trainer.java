@@ -1,7 +1,15 @@
 package com.example.Code.Entity.PT;
 
-import javax.persistence.*;
+import com.example.Code.Entity.Auth.Account;
+import com.example.Code.Entity.Gym.gym;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
+import javax.persistence.*;
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
 @Table(name = "personal_trainer")
 public class personal_trainer {
@@ -9,45 +17,15 @@ public class personal_trainer {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name= "ID_pt")
     private int id ;
+    private String name;
+    private String address;
+    private String avatar;
+    private int price;
+    @OneToOne
+    @JoinColumn(name = "accountID", referencedColumnName = "ID_Account")
+    private Account account;
 
-    @Column(name= "Name")
-    private String name ;
-
-    @Column(name= "Phone")
-    private String Phone ;
-
-    @Column(name= "Password")
-    private String Password ;
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getPhone() {
-        return Phone;
-    }
-
-    public void setPhone(String phone) {
-        Phone = phone;
-    }
-
-    public String getPassword() {
-        return Password;
-    }
-
-    public void setPassword(String password) {
-        Password = password;
-    }
+    @ManyToOne
+    @JoinColumn(name = "gymID", referencedColumnName = "ID_Gym")
+    private gym gym;
 }

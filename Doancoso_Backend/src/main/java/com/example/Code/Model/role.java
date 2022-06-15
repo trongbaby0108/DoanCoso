@@ -2,9 +2,9 @@ package com.example.Code.Model;
 
 
 public enum role {
-    CLIENT("CLIENT"),
-    ADMIN("ADMIN"),
-    SUPER_ADMIN("SUPER_ADMIN");
+    USER("USER"),
+    PERSONAL_TRAINER("PERSONAL_TRAINER"),
+    ADMIN("ADMIN");
 
     private String text;
 
